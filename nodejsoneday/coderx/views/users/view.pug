@@ -1,0 +1,18 @@
+extends ../layouts/common
+block content
+    h1= message
+    ul 
+        li
+            b id : 
+            span=user.id
+            br
+            b name : 
+            span=user.name
+            br
+            b  email : 
+            span=user.email
+            br
+            b country : 
+            span=user.from
+block section
+    p This is 1 phần của page view info User

@@ -1,0 +1,27 @@
+.developer {
+  &-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-gap: 40px;
+    max-width: 1170;
+    margin-inline: auto;
+    // padding-inline: 20px;
+    padding: 40px;
+  }
+  &-item {
+    background-color: white;
+    border: 2px solid #dee0e8;
+    box-sizing: border-box;
+    border-radius: 16px;
+    padding: 40px 40px 20px;
+  }
+  &-image {
+    aspect-ratio: 1;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 20px;
+    }
+  }
+}

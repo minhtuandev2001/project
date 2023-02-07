@@ -1,0 +1,12 @@
+mixin developerItem(image, name, job, desc)
+    .developer-item
+        .developer-image 
+            img(src= image, alt="")
+        h3.developer-name= name
+        .developer-meta 
+            span.developer-job= job
+            span.developer-rate
+        if desc
+            p.developer-description Lorem ipsum dolor sit amet.
+        else 
+            p.developer-other  this is example of description

@@ -1,0 +1,36 @@
+extends ../layouts/common
+block content
+    h1= message
+    -console.log(typeof list)
+    -console.log(list.length)
+    if checkAdd != undefined
+        if checkAdd  
+            p(style={color: 'red'}) them user thanh cong
+        else 
+            p='khong the them user' + checkAdd
+    form(action="/users/search" method="GET").d-flex
+        label(for='name' style="font-weight: 500").form-label Search Name
+        .ms-auto
+            .input-group.mb-4
+                input.form-control(type='text' name='q' placeholder='enter name' value=search)
+                button.btn.btn-primary(type='submit') Search
+    table.table.table-bordered
+        tr 
+            th STT
+            th Name
+            th Email
+            th From
+            th Phone
+            th action
+        each val, index in list 
+            tr 
+                td= index+1
+                td= val.name
+                td= val.email
+                td= val.from
+                td= val.phone
+                td
+                    a(href="/users/"+val.id).btn.btn-sm.btn-light view
+block section
+    p This is 1 phần của page list User
+

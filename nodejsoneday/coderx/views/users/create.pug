@@ -1,0 +1,25 @@
+extends ../layouts/common
+block content
+    h1 Create User
+    if errors
+        each val in errors
+            .alert.alert-danger.alert-dismissible.fade.show= val
+                button.btn-close(type='button' data-bs-dismiss='alert')
+    if values == undefined
+        -values = {name: '', email: '', phone: '', from: ''}
+    form(action="/users/create" method="POST")
+        .form-group.mb-2
+            label(for='name').form-label Name
+            input#name.form-control(type='text' name='name' placeholder='enter name' value=values.name)
+        .form-group.mb-2
+            label(for='email').from-label Email
+            input#email.form-control(type='text' name='email' placeholder='enter email' value=values.email)
+        .form-group.mb-2
+            label(for='phone').from-label Phone Number
+            input#phone.form-control(type='text' name='phone' placeholder='enter email' value=values.phone)
+        .form-group.mb-3
+            label(for='from').form-label Country
+            input#from.form-control(type='text' name='from' placeholder='enter country' value=values.from)
+        button.btn.btn-success.btn-sm(type='submit') Submit
+block section
+    p This is 1 phần của page CREATE
