@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body><!-- This is a comment node!-->
+<button onclick="myFunction()">Try it</button>
+
+<p><strong>Note:</strong> Whitespace inside elements is considered as text, and text 
+is considered as nodes. Comments are also considered as nodes.</p>
+<p>Thuộc tính childNode trả về một tập hợp các nút con của một nút , như một đối tượng nodeList</p>
+<p>các node được sắp xếp theo thứ tự khi chúng xuất hiện trong mã nguồn và có thể truy cập bằng chỉ mục</p>
+<p>childNode.length  = số lượng các nút </p>
+<p>truy xét cho phần tử của node : (childNode[1].style.backgroundColor = "red" ;)</p>
+<p>truy cập nội dung của node : childNode.[2].text </p>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var c = document.body.childNodes;
+  var txt = "";
+  var i;
+  for (i = 0; i < c.length; i++) {
+    txt = txt + c[i].nodeName + "<br>";
+  }
+
+  document.getElementById("demo").innerHTML = txt;
+}
+</script>
+
+</body>
+</html>
+FF

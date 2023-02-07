@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>cloneNode() sao tạo một bản sao của một nút và trả về bản sao của nút đó</p>
+<p>đặt tham số sau thành true nếu bạn muốn sao chép hết phần tử con trong nút muốn sao chép đó</p>
+<div style="border:1px solid black;background-color:pink">
+  <p style="color:red;">A p element</p>
+  <p style="color:green;">A p element</p>
+  <p style="color:blue;">A p element</p>
+</div>
+
+<p>Click the button to copy the div element above, including all its attributes and child elements, and append it to the document.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+  var elmnt = document.getElementsByTagName("DIV")[0];
+  var cln = elmnt.cloneNode(true);
+  document.body.appendChild(cln);
+}
+</script>
+
+</body>
+</html>

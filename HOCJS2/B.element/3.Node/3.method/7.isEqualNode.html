@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>kiểm tra xem hai node có bằng nhau hay không</p>
+<p>có cùng loại node typeNode</p>
+<p>có cùng nodeName , nodeValue , localName , nameSpaceURI và tiền tố</p>
+<p>Họ có cùng mã con với tất cả các con cháu</p>
+<p>chúng có cùng thuộc tính và giá trị thuộc tính</p>
+<p>Click the buttons to compare the <strong>first item</strong> in two of the lists.</p>
+
+<button onclick="myFunction('myList1','myList2')">Compare List 1 and 2</button>
+<button onclick="myFunction('myList1','myList3')">Compare List 1 and 3</button>
+<br><br>
+
+List 1:
+<ul id="myList1"><li>Water</li><li>Milk</li></ul>
+List 2:
+<ul id="myList2"><li>Coffee</li><li>Tea</li></ul>
+List 3:
+<ul id="myList3"><li>Water</li><li>Fire</li></ul>
+
+<p><strong>Note:</strong> Internet Explorer 8 and earlier does not support the isEqualNode method.</p>
+
+<p id="demo"></p>
+
+<script>
+function myFunction(x,y) {
+  var item1 = document.getElementById(x).firstChild;
+  var item2 = document.getElementById(y).firstChild;
+  var x = item1.isEqualNode(item2);
+  document.getElementById("demo").innerHTML = x;
+}
+</script>
+
+</body>
+</html>

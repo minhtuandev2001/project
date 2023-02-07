@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <p>Click the button to get the tag names of the body element's children.</p>
+    <p> trả về tập hợp các phần tử con của một phần tử , như một đối tượng HTMLCollection</p>
+    <p>sự khác nhau giữa childNode và children là children chỉ chứa các node phần tử còn childNode chứa hết</p>
+    <p>có thể truy cập từng phần tử để xét thuộc tính</p>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <p id="demo"></p>
+
+    <script>
+        function myFunction() {
+            var c = document.body.children;
+            var txt = "";
+            var i;
+            for (i = 0; i < c.length; i++) {
+                txt = txt + c[i].tagName + "<br>";
+            }
+
+            document.getElementById("demo").innerHTML = txt;
+        }
+    </script>
+
+</body>
+
+</html>

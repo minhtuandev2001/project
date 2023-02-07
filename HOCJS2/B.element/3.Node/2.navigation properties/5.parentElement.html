@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <p>Example list:</p>
+
+    <ul>
+        <li id="myLI">Coffee</li>
+        <li>Tea</li>
+    </ul>
+
+    <p>trả về phần tử mẹ của phần tử được chỉ định.</p>
+    <p>sự khác nhau giữa parentElement và parentNode là trả về null nếu nút cha không phải là nút phần tử</p>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <p id="demo"></p>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLI").parentElement.nodeName;
+            document.getElementById("demo").innerHTML = x;
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .democlass {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 class="democlass">Hello World</h1>
+
+    <p>Click the button to display the value of the class attribute of the h1 element.</p>
+
+    <button onclick="myFunction()">gia tri cua class</button>
+    <button onclick="myFunction2()">giá trị cua thuộc tính onclick</button>
+
+    <p id="demo"></p>
+    <p id="demo2"></p>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementsByTagName("H1")[0].getAttribute("class");
+            document.getElementById("demo").innerHTML = x;
+        }
+        function myFunction2() {
+            var x = document.getElementsByTagName('button')[1].getAttribute("onclick");
+            document.getElementById("demo2").innerHTML = x;
+        }
+    </script>
+
+</body>
+
+</html>

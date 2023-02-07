@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.democlass {
+  color: red;
+}
+</style>
+</head>
+<body>
+<h1 class="democlass">Hello World</h1>
+<p id="demo">Click the button to remove the class attribute from the h1 element.</p>
+<a id="myAnchor" href="https://www.w3schools.com">A Link: Go to w3schools.com</a>
+<button onclick="myFunction()">xóa thuộc tính class</button>
+<button onclick="myFunction2()">xóa thuộc tính href</button>
+<script>
+function myFunction() {
+  document.getElementsByTagName("H1")[0].removeAttribute("class"); 
+}
+function myFunction2() {
+  document.getElementsByTagName('a')[0].removeAttribute("href"); 
+}
+</script>
+</body>
+</html>

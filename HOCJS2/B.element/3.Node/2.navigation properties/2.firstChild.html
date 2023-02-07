@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Example list:</p>
+<ul id="myList"><li>Coffee</li><li>Tea</li></ul>
+
+<p>Click the button to get the HTML content of the list's first child node.</p>
+<p>trả về nút con đầu tiên của nút được chỉ định</p>
+
+<button onclick="myFunction()">lay ten node first</button>
+<button onclick="myFunction2()">lay noi dung</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var list = document.getElementById("myList").firstChild.nodeName;
+  document.getElementById("demo").innerHTML = list;
+}
+
+function myFunction2() {
+  var list = document.getElementById("myList").firstChild.innerHTML;
+  document.getElementById("demo").innerHTML = list;
+}
+</script>
+
+</body>
+</html>

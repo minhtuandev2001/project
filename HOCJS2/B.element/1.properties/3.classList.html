@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .mystyle {
+            width: 500px;
+            height: 50px;
+            padding: 15px;
+            border: 1px solid black;
+        }
+
+        .anotherClass {
+            background-color: coral;
+            color: white;
+        }
+
+        .thirdClass {
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 25px;
+        }
+
+        .newClassName {
+            width: 400px;
+            height: 100px;
+            background-color: lightblue;
+            text-align: center;
+            font-size: 25px;
+            color: navy;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <p>làm theo thu tu</p>
+    <button onclick="myFunction()">Them class</button>
+    <button onclick="myFunction2()">xoa class</button>
+    <button onclick="myFunction3()">thay class</button>
+    <button onclick="myFunction4()">in ra ten class</button>
+    <button onclick="myFunction5()">so luong class</button>
+    <button onclick="myFunction6()">ten class thu 3</button>
+    <button onclick="myFunction7()">element co class "thridClass" khong</button>
+
+    <p><strong>Note:</strong> The classList property is not supported in Internet Explorer 9 and earlier versions.</p>
+
+    <div id="myDIV">
+        I am a DIV element
+    </div>
+    <div>
+        <p id="demo"></p>
+    </div>
+    <script>
+        function myFunction() { // classList.add() them 1 or n class 
+            document.getElementById("myDIV").classList.add("mystyle", "anotherClass", "thirdClass");
+        }
+
+        function myFunction2() { // classList.remove() xoa class
+            document.getElementById("myDIV").classList.remove("mystyle", "anotherClass", "thirdClass");
+        }
+
+        function myFunction3() { // classList.toggle() chuyen doi class 
+            document.getElementById("myDIV").classList.toggle("newClassName");
+        }
+
+        function myFunction4() { // classList tra ve all ten class 
+            var x = document.getElementById("myDIV").classList;
+            document.getElementById("demo").innerHTML = x;
+        }
+
+        function myFunction5() { // classList.length() so luong class
+            var x = document.getElementById("myDIV").classList.length;
+            document.getElementById("demo").innerHTML = x;
+        }
+
+        function myFunction6() { // classList.item() truy cap class
+            var x = document.getElementById("myDIV").classList.item(2);
+            document.getElementById("demo").innerHTML = x;
+        }
+
+        function myFunction7() { // classList.contains() kiem tra 
+            var x = document.getElementById("myDIV").classList.contains('thirdClass')
+            document.getElementById("demo").innerHTML = x;
+        }
+    </script>
+
+</body>
+
+</html>

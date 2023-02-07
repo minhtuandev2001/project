@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Numbers</h2>
+
+<p>Number.isInteger() returns true if the value is an integer:</p>
+<p>kiểm tra xem có phải là số nguyên hay không :</p>
+<p>1: thuộc kiểu number </p>
+<p>2 : và là số nguyên </p>
+
+<p id="demo"></p>
+
+<p>Number.isInteger() is not supported in Internet Explorer.</p>
+
+<script>
+let res = "";
+res += Number.isInteger(4-2) + ": 4-2<br>";
+res += Number.isInteger(4/2) + ": 4/2<br>";
+res += Number.isInteger(5-2) + ": 5-2<br>";
+res += Number.isInteger(5/2) + ": 5/2<br>";
+
+document.getElementById("demo").innerHTML = res;
+</script>
+
+</body>
+</html>

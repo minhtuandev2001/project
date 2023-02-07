@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <p id="myP">Click the button to get the node type of this element.</p>
+    <p>nút phần tử = 1 </p>
+    <p>nút thuộc tính = 2</p>
+    <p>nút văn băn = 3</p>
+    <p>nút chú thính = 8</p>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <p id="demo"></p>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myP").nodeType;
+            document.getElementById("demo").innerHTML = x;
+        }
+    </script>
+
+</body>
+
+</html>

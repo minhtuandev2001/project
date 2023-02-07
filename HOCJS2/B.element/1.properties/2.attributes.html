@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to display the name of the button's second attribute (index 1).</p>
+
+<button id="myBtn" onclick="myFunction()">Try it</button>
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myBtn").attributes[1].name;
+  document.getElementById("demo").innerHTML = x;
+}
+</script>
+
+</body>
+</html>

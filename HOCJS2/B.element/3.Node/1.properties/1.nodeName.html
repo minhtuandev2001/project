@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <p id="myP">Click the button to get the node name of this element.</p>
+    <p>Khi click vào button , nếu là một phần tử thì hiện ra tên thẻ , nếu là một nút thuộc tính thì nodeName sẻ trả về tên thuộc tính đó.</p>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <p id="demo"></p>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myP").nodeName;
+            document.getElementById("demo").innerHTML = x;
+        }
+    </script>
+
+</body>
+
+</html>

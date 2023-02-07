@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#myDIV {
+  border: 1px solid black;
+}
+</style>
+</head>
+<body>
+<p>kiểm tra và trả về true hoặc false một nút được chỉ định có chứa nốt được tìm</p>
+<div id="myDIV">
+  <p>I am a p element inside div, and I have a <span id="mySPAN"><b>span</b></span> element inside of me.</p>
+</div>
+
+<p>Click the button to find out if the div element contains a span element.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var span = document.getElementById("mySPAN");
+  var div = document.getElementById("myDIV").contains(span);
+  document.getElementById("demo").innerHTML = div;
+}
+</script>
+
+</body>
+</html>

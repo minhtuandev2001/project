@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#content {
+  height: 100px;
+  width: 100px;
+  background-color: coral;
+  padding: 15px;
+  border: 10px solid black;
+  margin: 10px;
+  overflow: scroll;
+}
+</style>
+
+</head>
+<body>
+
+<p>Bấm vào nút đầu tiên để trả về scrollHeight và scrollWidth của div. Nhấp vào nút thứ hai để đặt chiều rộng và chiều cao của div thành các giá trị được trả về từ scrollHeight và scrollWidth..</p>
+
+<button onclick="getFunction()">Get scrollHeight and scrollWidth</button>
+
+<button onclick="setFunction()">Set height and width</button>
+
+<div id="content">Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..</div>
+
+<p id="demo"></p>
+
+<script>
+var elmnt = document.getElementById("content");
+
+function getFunction() {
+  document.getElementById("demo").innerHTML = "Height: " + elmnt.scrollHeight + "px" 
+  + "<br>Width: " + elmnt.scrollWidth + "px" ;
+}
+
+function setFunction() {
+  elmnt.style.height = elmnt.scrollHeight + "px";
+  elmnt.style.width = elmnt.scrollWidth + "px";
+}
+</script>
+
+</body>
+</html>

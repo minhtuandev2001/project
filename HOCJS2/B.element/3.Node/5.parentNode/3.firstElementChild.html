@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <p>Example list:</p>
+
+    <ul id="myList">
+        <li>Coffee</li>
+        <li>Tea</li>
+    </ul>
+
+    <p>Click the button to get the HTML content of the list's first child element.</p>
+    <p>trả về phần tử con đầu tiên của phần tử được chỉ định </p>
+    <p>sự khác biệt giữa firstChild và firstElementChild là firstChild trả về cả nút (văn bản , bình luận , phần tử )
+        còn firstElementChild trả về chỉ nút phần tử</p>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <p><strong>Note:</strong> The firstElementChild property is not supported in IE8 and earlier versions.</p>
+
+    <p id="demo"></p>
+
+    <script>
+        function myFunction() {
+            var list = document.getElementById("myList").firstElementChild.innerHTML;
+            document.getElementById("demo").innerHTML = list;
+        }
+    </script>
+
+</body>
+
+</html>

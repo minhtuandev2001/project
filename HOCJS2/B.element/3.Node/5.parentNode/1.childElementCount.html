@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  border: 1px solid black;
+  margin: 5px;
+}
+</style>
+</head>
+<body>
+
+<p>Click the button to find out how many children the div element below has.</p>
+<p>trả về số lượng nút con (chỉ nút phần tử )</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<div id="myDIV">
+  <p>First p element</p>
+  <p>Second p element</p>
+</div>
+
+<p><strong>Note:</strong> The childElementCount property is not supported in IE8 and earlier versions.</p>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var c = document.getElementById("myDIV").childElementCount;
+  document.getElementById("demo").innerHTML = c;
+}
+</script>
+
+</body>
+</html>

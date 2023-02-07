@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Example list:</p>
+
+<ul id="myList">
+  <li>Coffee</li>
+  <li>Tea</li>
+</ul>
+
+<p>Click the button to get the HTML content of the list's last child element.</p>
+<p>lấy phần tử con cuối cùng của node được chỉ định</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p><strong>Note:</strong> The lastElementChild property is not supported in IE8 and earlier versions.</p>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var list = document.getElementById("myList").lastElementChild.innerHTML;
+  document.getElementById("demo").innerHTML = list;
+}
+</script>
+
+</body>
+</html>

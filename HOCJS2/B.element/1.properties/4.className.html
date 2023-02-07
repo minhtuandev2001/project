@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .mystyle {
+            width: 300px;
+            height: 100px;
+            background-color: coral;
+            text-align: center;
+            font-size: 25px;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .newClassName {
+            width: 400px;
+            height: 100px;
+            background-color: lightblue;
+            text-align: center;
+            font-size: 25px;
+            color: navy;
+            margin-bottom: 10px;
+        }
+
+        .anotherClass {
+            background-color: coral;
+            text-align: center;
+            font-size: 25px;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>Click the button to set a class for div.</p>
+
+    <div id="myDIV">
+        I am a DIV element
+    </div>
+    <p>theo thu tu</p>
+    <button onclick="myFunction()">them class</button>
+    <button onclick="myFunction2()">in class</button>
+    <button onclick="myFunction3()">ghi de clas</button>
+    <button onclick="myFunction4()">+ them clas</button>
+
+    <p id="demo"></p>
+    <script>
+        function myFunction() { // them class cho phân tu 
+            document.getElementById("myDIV").className = "mystyle";
+        }
+
+        function myFunction2() { // lây ten class cho phân tu 
+            var x = document.getElementById("myDIV").className;
+            document.getElementById("demo").innerHTML = x;
+        }
+
+        function myFunction3() { // ghi class cho phân tu 
+            document.getElementById("myDIV").className = "newClassName";
+        }
+
+        function myFunction4() { // them class cho phân tu ma khong bi ghi de
+            document.getElementById("myDIV").className += " anotherClass"; // nhớ có khoảng trang trước class được thêm 
+        }
+    </script>
+
+</body>
+
+</html>

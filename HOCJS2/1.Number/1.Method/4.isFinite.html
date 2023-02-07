@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>JavaScript Numbers</h2>
+
+    <p>The Number.isFinite() function returns true if the value is a finite, legal number:</p>
+    <p>xác định xem một số có phải là hữu hay hay không</p>
+    <p id="demo"></p>
+
+    <p><strong>Note:</strong> Number.isFinite() is not supported in Internet Explorer.</p>
+
+    <script>
+        let res = "";
+        res += Number.isFinite(123) + ": 123<br>";
+        res += Number.isFinite(-123) + ": -123<br>";
+        res += Number.isFinite('123') + ": '123'<br>";
+        res += Number.isFinite('Hello') + ": 'Hello'<br>";
+
+        document.getElementById("demo").innerHTML = res;
+    </script>
+
+</body>
+
+</html>

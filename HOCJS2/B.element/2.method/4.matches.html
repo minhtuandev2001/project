@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .container {
+            background-color: tomato;
+            color: white;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p id="myElement" class="container"></p>
+
+    <script>
+        var element = document.getElementById("myElement");
+        if (element.matches(".container, .wrapper")) {
+            element.innerHTML =
+                "This element matches either the \".container\" CSS selector or the \".wrapper\" selector.";
+        } else {
+            element.innerHTML = "This element does not match any of the selectors.";
+        }
+    </script>
+
+</body>
+
+</html>

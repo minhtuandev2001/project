@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Numbers</h2>
+
+<p>The toPrecision(x) method formats a number to a specified length:</p>
+<p>định dạng độ dài được chỉ định</p>
+<p>x: tham số đò dài cần chỉ định nếu bỏ qua thì hiển thị tất cả</p>
+
+<p id="demo"></p>
+
+<script>
+let num = 13.3714;
+let a = num.toPrecision();
+let b = num.toPrecision(2);
+let c = num.toPrecision(3);
+let d = num.toPrecision(10);
+let n = a + "<br>" + b + "<br>" + c + "<br>" + d;
+document.getElementById("demo").innerHTML = n;
+</script>
+
+</body>
+</html>
