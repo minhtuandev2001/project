@@ -1,0 +1,30 @@
+<script>
+    const teacher = {
+    firstName: "Minh",
+    lastName: "Thảo",
+    isonline: false,
+    goOnline () {
+         this.isOnline = true ;
+         console.log(`${this.firstName} ${this.lastName} is Online`);
+    },
+    go0ffline() {
+         this.is0ffline = false ;
+         console.log(`${this.firstName} ${this.lastName} is Offline`);
+
+    }
+}
+const me = {
+    firstName: "Sơn",
+    lastName: "Đặng",
+    isonline: true,
+}
+
+console. log('Teacher: ', teacher.isonline);
+teacher.goOnline()
+console. log('Teacher: ', teacher.isonline);
+
+console.log('----------------------------------')
+console. log('Student: ', teacher.isonline);
+teacher.goOnline.apply(me);
+console. log('Student: ', me.isonline);
+</script>

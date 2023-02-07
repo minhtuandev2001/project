@@ -1,0 +1,16 @@
+<script>
+    const teacher ={
+        firstName: 'John',
+        lastName: 'Dang',
+    }
+
+    const me = {
+        firstName : "Tuan",
+        lastName : "Minh",
+        getFullName() { 
+            console.log(`${this.firstName} ${this.lastName}`) ;
+        }
+    }
+
+    me.getFullName.call(teacher) ;
+</script>

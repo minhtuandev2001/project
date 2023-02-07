@@ -1,0 +1,18 @@
+<script> // chạy trên trình duyệt thì mới nhận đối tượng window 
+    this.firstName = "Minh";
+    this.lastName = "Tuan";
+    const teacher = {
+        firstName: "Minh",
+        lastName: "doraemon",
+
+        getFullName() {
+            return `${this.firstName} ${this.lastName}`;
+        }
+    }
+    // case 1 
+    console.log(teacher.getFullName());
+
+    // case 2
+    const getTeacherName = teacher.getFullName.bind(teacher); // ràng buộc từ khóa thí với đối tượng teacher
+    console.log(getTeacherName());
+</script>

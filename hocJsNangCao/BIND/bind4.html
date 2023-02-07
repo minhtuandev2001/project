@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h1 id="heading1">chao cac ban !</h1>
+<div class="field">
+    <input type="text" placeholder="Enter car name" class="field-input" id="input" />
+    <button id="submit">ADD</button>
+    <ul id="root"></ul>
+</div>
+
+<body>
+    <script>
+        const $ = document.querySelector.bind(document);
+
+        const app = (() => {
+            const cars = [];
+            const root = $('#root');
+            const input = $('#input');
+            const submit = $('#submit');
+            return {
+                add(car) {
+                    cars.push(car);
+                },
+                delete(index) {
+                    cars.splice(index, 1);
+                },
+                render() {
+                    const html = cars.map((car, index) => `
+                    <li>${car} <span class="delete" data-index="${index}">&times</span></li>
+                    `).join('');
+                    root.innerHTML = html;
+                },
+                handleDelete(event) {  // pointerEvent
+                    const deleteBtn = event.target.closest('.delete');
+                    if(deleteBtn){
+                        const index = deleteBtn.dataset.index ;
+                        console.log(this);
+                        console.log(index);
+                        this.delete(index);
+                        this.render();
+                    }
+                },
+                init() {
+                    // handle submit
+                    submit.onclick = () => {
+                        const car = input.value;
+                        this.add(
+                            car
+                            ); // nếu gọi ở đây thì this sẽ là element submit , khắc phục bằng cách sử dụng arrow function 
+                        this.render();
+
+                        input.value = '';
+                        input.focus();
+                    }
+                    root.onclick = this.handleDelete.bind(this); // y la thang app
+                    this.render();
+                }
+            }
+        })();
+        app.init();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+<script>
+    const teacher = {
+        firstName:"minh",
+        lastName:"thao",
+
+        getFullName(){
+            return `${this.firstName} ${this.lastName}`;
+        }
+    }
+    const teacherName = teacher.getFullName.bind(teacher);
+    console.log(teacherName());
+</script>

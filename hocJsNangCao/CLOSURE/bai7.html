@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function createStorages(key) {
+            // PRIVATE 
+            const store = JSON.parse(localStorage.getItem(key)) ?? {};
+            const save = () => {
+                localStorage.setItem(key, JSON.stringify(store));
+            };
+            const storage = {
+                get(key) {
+                    return store[key];
+                },
+                set(key, value) {
+                    store[key] = value;
+                    save();
+                },
+                remove(key) {
+                    delete store[key]; // xóa object 
+                    save();
+                },
+            };
+            return storage;
+        }
+
+        // profile 
+        const profile = createStorages('javascript');
+        profile.get('javascript');
+        profile.set('javascript','react-app');
+        profile.set('AGE','20');
+        profile.set('ADDRESS','470 TRAN DAI NGHIA');
+        console.log(profile.get('javascript'));
+    </script>
+</body>
+
+</html>
