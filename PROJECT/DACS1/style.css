@@ -1,0 +1,133 @@
+.link {
+    margin-left: 16px;
+    box-shadow: 10px 5px 10px rgb(216, 216, 216);
+}
+
+.link a {
+    padding: 10px 0px 10px 10px;
+}
+
+.lienhe {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.h11 {
+    position: absolute;
+    right: 25%;
+    margin: 12% 0% 0% 10%;
+    padding: 3%;
+    background-image: url(img/h1.png);
+    opacity: 0.6;
+    z-index: 2;
+    text-align: center;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+}
+@keyframes hien {
+    from{left: -100px;}
+    to{ left: 100px;}
+}
+.h11{
+    animation-name: hien;
+    animation-duration: 2.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+@media screen and (min-width:320px) and (max-width: 1000px) {
+    .h11{
+        display: none;
+    }
+}
+@media screen and (min-width:320px) and (max-width: 1200px) {
+    #top1 {
+        display: none;
+    }
+
+    #top2 {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #top1 {
+        display: block;
+    }
+
+    #top2 {
+        display: none;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width: 900px) {
+    li .nav1 a {
+        color: white;
+        width: 100%;
+        padding: 100%;
+    }
+}
+
+div .list-group {
+    width: 30%;
+    margin-left: 10px;
+}
+
+.colright {
+    width: 65%;
+}
+
+@media screen and (min-width:320px) and (max-width: 900px) {
+    div .link{
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    div .tin{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    div .list-group {
+        width: 96%;
+        margin-left: 0%;
+    }
+
+    .colright {
+        width: 100%;
+    }
+}
+
+@media (min-width: 576px) {
+
+    .container {
+        width: 100%;
+    }
+}
+
+.title1 {
+    color: black;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.title2 {
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.title1:hover {
+    color: red;
+}
+
+.title2:hover {
+    color: red;
+}
+/* .background_img{
+    background-image: url(img/suhi1.png);
+    background-repeat  : no-repeat;
+    background-size: ;
+
+} */

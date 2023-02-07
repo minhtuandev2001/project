@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style_food.css">
+    <title>Document</title>
+</head>
+<style>
+
+</style>
+
+<body>
+    <header>
+        <div class="home">
+            <a href="../Danh_sach_mon_an.html"><span class="fa fa-bars" style="font-size: 2em;"></span> <span
+                    style="font-size:1.5em;">Về Danh Sách</span></a>
+        </div>
+        <div class="ke_tiep">
+            <a href="Yakiniku.html"><span style="font-size:1.2em;">KẾ TIẾP </span><span class="fa fa-arrow-right"
+                    style="font-size: 1.5em;"></span></a>
+        </div>
+    </header>
+    <section>
+        <div class="banner">
+            <div class="row">
+                <div class="col_50">
+                    <div class="box_img">
+                        <img id="nhan_img" src="img/b.png" alt="ca hoi">
+                    </div>
+                </div>
+                <div class="col_50">
+                    <div class="content">
+                        <div class="text">
+                            <h4>Basashi</h4>
+                            <p>
+                                Basashi là tên gọi của món thịt ngựa sống, là đặc sản nổi tiếng của vùng Kumamoto ở đảo
+                                Kyushu. Basashi được ăn kèm với tương, tỏi hoặc sốt cải ngựa. Hình ảnh những miếng thịt
+                                đỏ hỏn khi nhúng vào tương vẫn còn nhúc nhích khiến thực khách vô cùng thích thú.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row2">
+                <div class="title">
+                    <h5>Một Số Hình Ảnh Khác</h5>
+                </div>
+                <div class="menu_img">
+                    <div class="card">
+                        <img src="img/b2.png" alt="hinh 1" onclick="myFunction1();">
+                    </div>
+                    <div class="card">
+                        <img src="img/b3.png" alt="hinh 1" onclick="myFunction2();">
+                    </div>
+                    <div class="card">
+                        <img src="img/b4.png" alt="hinh 1" onclick="myFunction3();">
+                    </div>
+                </div>
+            </div>
+            <div class="row3">
+                <div class="title_coment">
+                    <h5>Đánh giá về món ăn này</h5>
+                </div>
+                <div class="box_comment" id="box_comment">
+                    <div class="comment">
+                        <div class="comment_img">
+                            <img src="img/anh1.png" alt="">
+                        </div>
+                        <div class="box_comment_text">
+                            <div class="ten_nguoi_commnet">
+                                <span>bui minh tuan </span> <span> 1:33 6/4/2021 </span>
+                            </div>
+                            <div class="sao_danh_gia">
+                                <span class="far fa-star"></span>
+                                <span class="far fa-star"></span>
+                                <span class="far fa-star"></span>
+                                <span class="far fa-star"></span>
+                                <span class="far fa-star"></span>
+                            </div>
+                            <div class="noidung_comment">
+                                <p>Tôi cảm thấy món ăn này rất đẹp mắt Tôi cảm thấy món ăn này rất đẹp mắ n ăn này rất
+                                    đẹp mắ n ăn này rất đẹp mắ n ăn này rất đẹp mắ </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <div class="comment_img">
+                            <img src="img/anh3.png" alt="">
+                        </div>
+                        <div class="box_comment_text">
+                            <div class="ten_nguoi_commnet">
+                                <span>bui minh tuan </span> <span> 12:33 7/4/2021 </span>
+                            </div>
+                            <div class="sao_danh_gia">
+                                <span class="far fa-star"></span>
+                                <span class="far fa-star"></span>
+                                <span class="far fa-star"></span>
+                                <span class="far fa-star"></span>
+                                <span class="far fa-star"></span>
+                            </div>
+                            <div class="noidung_comment">
+                                <p>Tôi cảm thấy món ăn này rất đẹp mắt Tôi cảm thấy món ăn này rất đẹp mắ n ăn này rất
+                                    đẹp mắ n ăn này rất đẹp mắ n ăn này rất đẹp mắ </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <div class="comment_img">
+                            <img src="img/anh2.png" alt="">
+                        </div>
+                        <div class="box_comment_text">
+                            <div class="ten_nguoi_commnet">
+                                <span>bui minh tuan </span> <span> 12:33 10/4/2021 </span>
+                            </div>
+                            <div class="sao_danh_gia">
+                                <span class="far fa-star"></span>
+                                <span class="far fa-star"></span>
+                                <span class="far fa-star"></span>
+                                <span class="far fa-star"></span>
+                                <span class="far fa-star"></span>
+                            </div>
+                            <div class="noidung_comment">
+                                <p>Tôi cảm thấy món ăn này rất đẹp mắt Tôi cảm thấy món ăn này rất đẹp mắ n ăn này rất
+                                    đẹp mắ n ăn này rất đẹp mắ n ăn này rất đẹp mắ </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <div class="comment_img">
+                            <img src="img/anh4.png" alt="">
+                        </div>
+                        <div class="box_comment_text">
+                            <div class="ten_nguoi_commnet">
+                                <span>bui minh tuan </span> <span> 10:33 15/4/2021 </span>
+                            </div>
+                            <div class="sao_danh_gia">
+                                <span class="far fa-star"></span>
+                                <span class="far fa-star"></span>
+                                <span class="far fa-star"></span>
+                                <span class="far fa-star"></span>
+                                <span class="far fa-star"></span>
+                            </div>
+                            <div class="noidung_comment">
+                                <p>Tôi cảm thấy món ăn này rất đẹp mắt Tôi cảm thấy món ăn này rất đẹp mắ n ăn này rất
+                                    đẹp mắ n ăn này rất đẹp mắ n ăn này rất đẹp mắ </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="danhgia">
+            <div class="danhgia_form">
+                <h4>Chọn số sao tương ứng với sự yêu thích món ăn này</h4>
+                <div id="danhgia_form_star" class="danhgia_form_star">
+                    <span class="far fa-star" onclick="danh_gia();"></span>
+                    <span class="far fa-star" onclick="danh_gia2();"></span>
+                    <span class="far fa-star" onclick="danh_gia3();"></span>
+                    <span class="far fa-star" onclick="danh_gia4();"></span>
+                    <span class="far fa-star" onclick="danh_gia5();"></span>
+                </div>
+                <div class="danhgia_form">
+                    <p id="star_chose">Tôi Rất Yêu Thích Món Ăn Này</p>
+                </div>
+                <div class="danhgia_form_text">
+                    <label for="name">Họ Tên</label>
+                    <input type="text" id="name" placeholder="Nhập Tên Cuả Bạn..">
+                    <label for="email">Email</label>
+                    <input type="email" id="Email" placeholder="Nhập email của bạn">
+                    <label for="gender">Giới tính</label>
+                    <div class="chose_gender">
+                        <input name="gender" type="radio" value="Nam" /> <span>Nam</span>
+                        <input name="gender" type="radio" value="Nu" /> <span>Nữ</span>
+                        <input name="gender" type="radio" value="Khac" /> <span>Khác</span>
+                    </div>
+                    <label for="binhluan">Bình luận</label>
+                    <textarea id="message" name="binh luan" cols="30"
+                        rows="10">Hãy đánh giá về món ăn này nhé..</textarea>
+                    <button type="button" id="gui" onclick="create_cmt();">GỬI</button>
+                </div>
+            </div>
+            <footer>
+                <div class="foot">
+                    <div class="lienhe">
+                        <ul>
+                            <li style="font-size: 1.2em; font-weight: bold;">Điều Hành Trang Web</li>
+                            <li>Tác giả: Bùi Minh Tuấn</li>
+                            <li>SDT: 0396104572</li>
+                            <li>Liên Hệ:</li>
+                            <li>Email: bmtuan.20it1@vku.udn.vn</li>
+                            <li>Địa Chỉ: 470 trần dài nghĩa quận ngũ hành sơn</li>
+                        </ul>
+                    </div>
+                    <div class="quan_tam">
+                        <ul>
+                            <li style="font-size: 1.2em; font-weight: bold;">Tìm Hiểu Thêm:</li>
+                            <li>-Lễ Hội Ẩm Thực Nhật Bản</li>
+                            <li>-Món ăn truyền thống Nhật Bản</li>
+                            <li>-Ẩm Thực Vùng Miền</li>
+                            <li>-Ẩm Thực Đường Phố</li>
+                        </ul>
+                    </div>
+                    <div class="thongtin">
+                        <ul>
+                            <li style="font-size: 1.2em; font-weight: bold;">Chính Sách</li>
+                            <li>Điều kiện & Điều khoản</li>
+                            <li> Chính sách bảo mật</li>
+                            <li>Câu hỏi thường gặp</li>
+                            <li>Kết Nối</li>
+                            <a href="https://www.facebook.com/su.sua.3/"> <i class="fab fa-facebook-f"
+                                   ></i></a>
+                            <a href="#"> <i class="fab fa-instagram" ></i></a>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </section>
+    <div class="mess" onclick="message();">
+        <i id="" class="fab fa-facebook-messenger"></i>
+    </div>
+    <div class="mess_text" id="message">
+        <div class="mess_text__header">
+            <span>Food JaPan</span>
+            <button onclick="message();" type="button" class="close" data-dismiss=""
+                style="font-weight: normal;">x</button>
+        </div>
+        <div class="mess_text__body" id="mess_text__body__text_mess">
+            <p class="mess_text__body__mess">chao ban</p>
+        </div>
+        <div class="mess_text__footer">
+            <i class="fas fa-folder-plus"></i>
+            <input id="text" type="text" placeholder="nhap gi do di">
+            <i id="send" class="fas fa-paper-plane"></i>
+        </div>
+    </div>
+</body>
+<script>
+    var element = document.getElementById("nhan_img");
+    // code thay doi hinh ảnh
+    function myFunction1() {
+        element.src = "img/b2.png";
+    }
+
+    function myFunction2() {
+        element.src = "img/b3.png";
+    }
+
+    function myFunction3() {
+        element.src = "img/b4.png";
+    }
+</script>
+<script src="code.js"></script>
+
+</html>

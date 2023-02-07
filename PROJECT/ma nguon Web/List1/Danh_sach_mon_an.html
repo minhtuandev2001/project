@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style1.css">
+    <title>CAC KIEU CHE BIEN MON AN</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header>
+            <div id="dau" class="header_title">
+                <img class="img_header" src="img/trangchu.png" alt="">
+                <div class="title_header">
+                    <div class="text_header">
+                        <h1 style="margin-bottom: 0; font-size:4vw; font-family:Arial;">Các Kiểu Chế Biến Món Ăn</h1>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div id="menu" class="menu">
+            <h4>Danh Sách</h4>
+            <input type="text" id="mySearch" onkeyup="Search()" placeholder="Search.." title="Type in a category">
+            <ul id="myMenu">
+                <li> <a href="../main.html">Trang chủ</a></li>
+                <li><a href="#demo1">Tươi Sống</a></li>
+                <li> <a href="#demo2">Chiên Nướng</a></li>
+                <li> <a href="#demo3">Mì</a></li>
+                <li> <a href="#demo4">Súp</a></li>
+                <li><a href="#demo5">Món Chay</a></li>
+                <li><a href="#dau">Lên Đầu</a></li>
+            </ul>
+        </div>
+        <div class="dieukhien" onclick="myFunction();">
+            <i id="button" class="fas fa-chevron-left menu_dienthoai" style="font-size: 1.5em;" ></i>
+        </div>
+        <div class="mess" onclick="message();">
+            <i class="fab fa-facebook-messenger"></i>
+        </div>
+        <div class="mess_text" id="message">
+            <div class="mess_text__header">
+                <span>Food JaPan</span>
+                <button onclick="message();" type="button" class="close" data-dismiss=""
+                    style="font-weight: normal;">x</button>
+            </div>
+            <div class="mess_text__body" id="mess_text__body">
+                <p class="mess_text__body__mess">chao ban</p>
+            </div>
+            <div class="mess_text__footer">
+                <i class="fas fa-folder-plus"></i>
+                <input id="text" type="text" placeholder="nhập câu hỏi.....">
+                <i id="send" class="fas fa-paper-plane"></i>
+            </div>
+        </div>
+        <section>
+            <div class="container-fluid" id="demo1">
+                <div class="container_heading">
+                    <div class="container_heading_text">
+                        <h3><span>Đ</span>ồ <span>Ă</span>n <span>T</span>ươi <span>S</span>ống</h3>
+                        <p>Đồ Ăn Tươi Sống Được Chế Biến Một Cách Công Phu ,và tỉ mỉ </p>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="card_section">
+                        <a href="food menu/sushi.html">
+                            <div class="card">
+                                <img src="img/sushi.png" alt="">
+                                <div class="card-body">
+                                    <h5>Sushi</h5>
+                                    <p>Sushi là món ăn Nhật Bản gồm thành phần chính là cơm</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="food menu/sashimi.html">
+                            <div class="card">
+                                <img src="img/cahoi.png" alt="">
+                                <div class="card-body">
+                                    <h5>Sashimi</h5>
+                                    <p>Nổi tiếng trên khắp thế giới vì mang trong</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="food menu/Fugu.html">
+                            <div class="card">
+                                <img src="img/f.png" alt="">
+                                <div class="card-body">
+                                    <h5>Fugu</h5>
+                                    <p>Món ăn này có thể bị liệt vào danh sách</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="food menu/mucnhay.html">
+                            <div class="card">
+                                <img src="img/m.png" alt="">
+                                <div class="card-body">
+                                    <h5>Mực Nhảy</h5>
+                                    <p>Những con mực trong veo nằm im bất động  </p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="food menu/Basashi.html">
+                            <div class="card">
+                                <img src="img/b.png" alt="">
+                                <div class="card-body">
+                                    <h5>Basashi</h5>
+                                    <p> Basashi là tên gọi của món thịt ngựa sống</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container-fluid" id="demo2">
+                <div class="container_heading">
+                    <div class="container_heading_text">
+                        <h3><span>C</span>hiên <span>N</span>ướng</h3>
+                        <p>Mùi Thơm Cùng Với Cách Chế Biến Tạo Nên Những Món Nướng Vô Cùng Thơm Ngon</p>
+                    </div>
+                </div>
+
+                <div class="section" style="background-image: url('img/bk4.png');">
+                    <div class="card_section">
+                        <a href="food menu/Yakiniku.html">
+                            <div class="card">
+                                <img src="img/yakiniku4.png" alt="">
+                                <div class="card-body">
+                                    <h5>Yakiniku</h5>
+                                    <p>Yakiniku là món thịt nướng tại bàn, giữ nguyên</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="food menu/Yakizakana.html">
+                            <div class="card">
+                                <img src="img/yakizakana.png" alt="">
+                                <div class="card-body">
+                                    <h5>Cá nướng (Yakizakana)</h5>
+                                    <p>Là một quốc gia giáp biển, nên hải sản tại đây</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="food menu/yakitori.html">
+                            <div class="card">
+                                <img src="img/yakitori.png" alt="">
+                                <div class="card-body">
+                                    <h5>Yakitori</h5>
+                                    <p> là một ăn phổ biến của đất nước mặt trời mọc</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="food menu/unagi.html">
+                            <div class="card">
+                                <img src="img/luonnuong.png" alt="">
+                                <div class="card-body">
+                                    <h5>Unagi</h5>
+                                    <p>Unagi trong tiếng Nhật có nghĩa là lươn, được</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="food menu/tenpura.html">
+                            <div class="card">
+                                <img src="img/t.png" alt="">
+                                <div class="card-body">
+                                    <h5>Tempura</h5>
+                                    <p>Đây là một món ăn khá phổ biến trong các</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container-fluid" id="demo3">
+                <div class="container_heading">
+                    <div class="container_heading_text">
+                        <h3><span>M</span>ì</h3>
+                        <p>Nhật Bản Cũng Cực Kì Nổi Tiếng Với Những Món Mì Thơm Ngon</p>
+                    </div>
+                </div>
+
+                <div class="section" style="background-image: url('img/bk1.png');">
+                    <div class="card_section">
+                        <a href="food menu/udon.html">
+                            <div class="card">
+                                <img src="img/myudon.png" alt="">
+                                <div class="card-body">
+                                    <h5>Mì Udon</h5>
+                                    <p>là một loại mỳ sợi làm từ bột mì, thường</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="food menu/ramen.html">
+                            <div class="card">
+                                <img src="img/myramen.png" alt="">
+                                <div class="card-body">
+                                    <h5>Mì Ramen</h5>
+                                    <p>Ramen có lẽ là món mì nổi tiếng nhất đất nước</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="food menu/soba.html">
+                            <div class="card">
+                                <img src="img/soba.png" alt="">
+                                <div class="card-body">
+                                    <h5>mì Soba</h5>
+                                    <p>Khác với những loại trên, mì soba được</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="food menu/somen.html">
+                            <div class="card">
+                                <img src="img/somen.png" alt="">
+                                <div class="card-body">
+                                    <h5>Mì Somen</h5>
+                                    <p>Somen cũng được làm từ lúa mì giống ramen, nhưng</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="food menu/shirataki.html">
+                            <div class="card">
+                                <img src="img/siritaki.png" alt="">
+                                <div class="card-body">
+                                    <h5>Shirataki</h5>
+                                    <p>Cũng thường được gọi là mì konjac,</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container-fluid" id="demo4">
+                <div class="container_heading">
+                    <div class="container_heading_text">
+                        <h3><span>S</span>úp</h3>
+                        <p>Nhật Bản Được Biết Đến Với Nhưng loại Súp Giải Nhiệt Đầy Dinh Dưỡng</p>
+                    </div>
+                </div>
+
+                <div class="section" style="background-image: url('img/bk2.png');">
+                    <div class="card_section">
+                        <a href="food menu/miso.html">
+                            <div class="card">
+                                <img src="img/moso.png" alt="">
+                                <div class="card-body">
+                                    <h5>Súp Miso</h5>
+                                    <p>là một món ăn truyền thống của Nhật Bản. Canh</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="food menu/tonjiru.html">
+                            <div class="card">
+                                <img src="img/tonjiru.png" alt="">
+                                <div class="card-body">
+                                    <h5>Súp Tonjiru</h5>
+                                    <p>là món canh thịt lợn ninh với các loại rau củ</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="food menu/inomi.html">
+                            <div class="card">
+                                <img src="img/imoni.png" alt="">
+                                <div class="card-body">
+                                    <h5>Súp Imoni</h5>
+                                    <p>Imoni là một món súp nhiều khoai tây và thịt</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="food menu/shoyu.html">
+                            <div class="card">
+                                <img src="img/shoyu.png" alt="">
+                                <div class="card-body">
+                                    <h5>Súp Shoyu</h5>
+                                    <p>lThường đi chung với mì Ramen, Shoyu là một</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="food menu/tonkotsu.html">
+                            <div class="card">
+                                <img src="img/tonktsu.png" alt="">
+                                <div class="card-body">
+                                    <h5>Tonkotsu</h5>
+                                    <p>là một món ramen có nguồn gốc từ Fukuoka,</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container-fluid" id="demo5">
+                <div class="container_heading">
+                    <div class="container_heading_text">
+                        <h3><span>M</span>ón <span>C</span>hay</h3>
+                        <p>Món Chay Không Chỉ Hấp Dẫn Mà Cũng Nhiều Chất Dinh Dưỡng Không Kém Món Mặn</p>
+                    </div>
+                </div>
+
+                <div class="section" style="background-image: url('img/bk3.png');">
+                    <div class="card_section">
+                        <a href="food menu/comnam.html">
+                            <div class="card">
+                                <img src="img/camnam.png" alt="">
+                                <div class="card-body">
+                                    <h5>Onigiri (Cơm nắm)</h5>
+                                    <p>Onigiri nói nôm na là cơm được nắm thành</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="food menu/comnam.html">
+                            <div class="card">
+                                <img src="img/dauphu.png" alt="">
+                                <div class="card-body">
+                                    <h5>Đậu phụ</h5>
+                                    <p> Đậu phụ là nguyên liệu cho rất nhiều nhữn</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="food menu/nato.html">
+                            <div class="card">
+                                <img src="img/natto.png" alt="">
+                                <div class="card-body">
+                                    <h5>Natto</h5>
+                                    <p>Natto là một món ăn truyền thống của Nhật</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="food menu/edamame.html">
+                            <div class="card">
+                                <img src="img/edamame.png" alt="">
+                                <div class="card-body">
+                                    <h5>Edamame</h5>
+                                    <p>Giống như đậu phộng của Việt Nam, người</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="card">
+                                <img src="img/ramenchay.png" alt="">
+                                <div class="card-body">
+                                    <h5>Mì ramen chay</h5>
+                                    <p>Là món m được làm từ những</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container-fluid" style="background-color:rgb(238, 210, 236)">
+                <div class="container">
+                    <div class="lienhe">
+                        <ul>
+                            <li style="font-size: 1.2em; font-weight: bold;">Điều Hành Trang Web</li>
+                            <li>Tác giả: Bùi Minh Tuấn</li>
+                            <li>SDT: 0396104572</li>
+                            <li>Liên Hệ:</li>
+                            <li>Email: bmtuan.20it1@vku.udn.vn</li>
+                            <li>Địa Chỉ: 470 trần dài nghĩa quận ngũ hành sơn</li>
+                        </ul>
+                    </div>
+                    <div class="quan_tam">
+                        <ul>
+                            <li style="font-size: 1.2em; font-weight: bold;">Tìm Hiểu Thêm:</li>
+                            <li>-Lễ Hội Ẩm Thực Nhật Bản</li>
+                            <li>-Món ăn truyền thống Nhật Bản</li>
+                            <li>-Ẩm Thực Vùng Miền</li>
+                            <li>-Ẩm Thực Đường Phố</li>
+                        </ul>
+                    </div>
+                    <div class="thongtin">
+                        <ul>
+                            <li style="font-size: 1.2em; font-weight: bold;">Chính Sách</li>
+                            <li>Điều kiện & Điều khoản</li>
+                            <li> Chính sách bảo mật</li>
+                            <li>Câu hỏi thường gặp</li>
+                            <li>Kết Nối</li>
+                            <a title="facebook" href="https://www.facebook.com/su.sua.3/"> <i class="fab fa-facebook-f"
+                                    style="color:#333; font-size:1.5em; margin-right: 10px;" ></i></a>
+                            <a title="instagram" href="#"> <i class="fab fa-instagram" style="color:#333; font-size:1.5em; margin-right: 10px;"></i></a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+<script>
+    var element = document.getElementById("menu");
+
+    function myFunction() {
+        if (element.style.width.match("250px")) {
+            element.style.width = "0px";
+            document.getElementById("button").style.transform = "rotate(0deg)";
+            document.getElementById("dieukhien").style.left = "0px";
+        } else {
+            element.style.width = "250px";
+            document.getElementById("button").style.transform = "rotate(180deg)";
+            document.getElementById("dieukhien").style.left = "250px";
+        }
+
+    }
+    var send = document.getElementById("send").addEventListener("click", send_mess);
+
+    function send_mess() {
+        var text = document.getElementById("mess_text__body");
+        var mess = document.getElementById("text").value;
+        text.innerHTML += "<br>" + "<br>" + "<p class=" + "mess_text__body__mess" + ">" + mess + "</p>";
+        document.getElementById("text").value = "";
+    }
+
+    function message() {
+        let element = document.getElementById("message");
+        if (element.style.visibility.match("hidden")) {
+            element.style.visibility = "visible";
+        } else {
+            element.style.visibility = "hidden";
+        }
+    }
+    // hàm search() 
+    function Search() {
+        var input, filter, ul, li, a, i;
+        input = document.getElementById("mySearch");
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("myMenu");
+        li = ul.getElementsByTagName("li");
+        for (i = 0; i < li.length; i++) {
+          a = li[i].getElementsByTagName("a")[0];
+          if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+          } else {
+            li[i].style.display = "none";
+          }
+        }
+      }
+</script>
+
+</html>

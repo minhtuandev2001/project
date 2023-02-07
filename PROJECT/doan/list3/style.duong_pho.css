@@ -1,0 +1,451 @@
+* {
+    font-family: Segoe UI;
+}
+
+.banner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.banner .banner_img {
+    width: 100%;
+}
+
+.banner .banner_img img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+}
+.banner_title h1{
+    position: absolute;
+    width: 100%;
+    font-size:3.8vw;
+    z-index: 2;
+    color: #fff;
+    text-align: center;
+}
+
+.thongtin {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.thongtin h1 {
+    padding: 15px 0px;
+    color: #ff0157;
+}
+
+.thongtin .box_img {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.thongtin .box_img img {
+    width: 80%;
+    height: 500px;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.thongtin .box_img img:hover {
+    opacity: 0.8;
+}
+
+.thongtin .box_text {
+    padding: 20px 0px;
+}
+
+.thongtin .box_text h3 {
+    color: #ff0157;
+}
+
+/**/
+/*row 3 hiển thị danh sách comment*/
+.row3 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 100px;
+}
+
+.row3 .title_coment h5 {
+    font-size: 2em;
+    color: #ff0157;
+}
+
+.row3 .box_comment {
+    width: 100%;
+    padding: 50px 100px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.row3 .box_comment .comment {
+    width: 490px;
+    height: 130px;
+    margin: 25px;
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    align-items: center;
+    box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.08);
+}
+
+.row3 .box_comment .comment .comment_img {
+    padding: 20px;
+}
+
+.row3 .box_comment .comment .comment_img img {
+    width: 90px;
+    height: 90px;
+    margin-top: 2%;
+    border-radius: 50%;
+
+}
+
+.box_comment_text {
+    margin-top: 0px;
+}
+
+.ten_nguoi_commnet span:nth-child(1) {
+    font-size: 1.1em;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-right: 15px;
+}
+.ten_nguoi_commnet p{
+    margin: 0;
+    font-style: italic;
+}
+.box_comment_text .noidung_comment {
+    margin: 0;
+    height: 50px;
+    overflow: hidden;
+}
+
+.box_comment_text .noidung_comment p {
+    margin: 0;
+    max-width: 350px;
+    line-height: 23px;
+    font-style: italic;
+}
+
+.box_comment_text .sao_danh_gia span {
+    color: orange;
+}
+
+.danhgia {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 50px;
+    background-image: url('img/binhluan.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.danhgia .danhgia_form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.danhgia .danhgia_form .danhgia_form_text {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.danhgia .danhgia_form {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.danhgia .danhgia_form_star {
+    font-size: 2em;
+    cursor: pointer;
+    color: orange;
+}
+
+.danhgia .danhgia_form_text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.danhgia .danhgia_form_text label {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.danhgia .danhgia_form_text input,
+.danhgia .danhgia_form_text textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(0, 0, 0, 0.5);
+    color: #fff;
+    outline: none;
+
+}
+
+.danhgia .danhgia_form_text input[type="radio"] {
+    width: auto;
+    margin: auto;
+}
+
+.danhgia .danhgia_form_text button {
+    width: fit-content;
+    padding: 3px 20px;
+    margin: 15px 0px;
+    background-color: #ff0157;
+    color: #fff;
+    outline: none;
+    transition: 0.6s;
+}
+
+.danhgia .danhgia_form_text button:hover {
+    letter-spacing: 2px;
+    padding: 3px 24px
+}
+
+footer .foot {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+footer .foot .lienhe,
+.quan_tam,
+.thong_tin,
+ul {
+    list-style: none;
+    padding: 10px;
+}
+
+footer .foot .lienhe,
+.quan_tam,
+.thong_tin,
+ul li {
+    color: #fff;
+    padding: 15px;
+}
+
+footer .thong_tin a {
+    font-size: 1.5em;
+    color: #fff;
+    margin: auto;
+    padding: 10px;
+}
+
+.dieu_khien {
+    position: fixed;
+    top: 50px;
+    left: 15px;
+}
+
+.dieu_khien span {
+    font-size: 1.8em;
+    color: rgb(231, 42, 152);
+}
+.dieu_khien a{
+    text-decoration: none;
+    font-size: 1em;
+}
+
+/* mess*/
+.mess {
+    position: fixed;
+    top: 89%;
+    right: 32px;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: rgb(10, 124, 255);
+    box-shadow: 0px 7px 35px rgb(0 0 0 / 9%);
+    cursor: pointer;
+    z-index: 1;
+}
+
+.mess i {
+    font-size: 2.5em;
+    color: #fff;
+}
+
+.mess_text {
+    position: fixed;
+    top: 30%;
+    right: 32px;
+    width: 320px;
+    height: 500px;
+    background-color: #fff;
+    z-index: 10000;
+    border-radius: 10px;
+    overflow-y: scroll;
+    transition: 0.1s;
+    box-shadow: 0px 7px 35px rgba(0, 0, 0, 0.09);
+    visibility: hidden;
+}
+
+.mess_text .mess_text__header {
+    width: 100%;
+    height: 30px;
+    background-color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0px 7px 45px rgba(0, 0, 0, 0.09);
+}
+
+.mess_text .mess_text__header span {
+    vertical-align: middle;
+    padding-left: 10px;
+    color: #ff0157;
+    font-weight: 500;
+}
+
+.mess_text .mess_text__header button {
+    vertical-align: middle;
+    padding-right: 10px;
+    outline: none;
+}
+
+.mess_text .mess_text__body {
+    width: 100%;
+    height: 433px;
+    margin-top: 2px;
+    padding: 10px;
+    background-color: #fff;
+    overflow: auto;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 100%;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: black;
+    border-radius: 5px;
+    height: 10px;
+}
+
+.mess_text .mess_text__footer {
+    width: 100%;
+    background-color: #fff;
+    padding: 5px;
+    margin-top: 2px;
+    box-shadow: 0px -7px 45px rgba(0, 0, 0, 0.09);
+}
+
+.mess_text__footer input {
+    width: 80%;
+    outline: none;
+    border: none;
+
+}
+
+.mess_text__footer i:nth-child(1) {
+    padding-right: 5px;
+    color: orange;
+    cursor: pointer;
+}
+
+.mess_text__footer i:nth-child(3) {
+    padding-left: 7px;
+    color: rgb(10, 124, 255);
+    cursor: pointer;
+}
+
+.mess_text__body p {
+    max-width: 290px;
+}
+
+.mess_text__body .mess_text__body__mess {
+    float: right;
+    background-color: rgb(10, 124, 255);
+    color: #fff;
+    width: auto;
+    padding: 2px 10px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    border-bottom-right-radius: 0px;
+}
+
+@media only screen and (max-width:1280px) {
+
+    .danhgia .danhgia_form_text input,
+    .danhgia .danhgia_form_text textarea {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:1280px) {
+    .row {
+        padding: 150px 50px;
+    }
+
+    .danhgia .danhgia_form_text input,
+    .danhgia .danhgia_form_text textarea {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .danhgia .danhgia_form {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .danhgia {
+        padding: 20px 0px;
+    }
+
+    .row3 .title_coment h5 {
+        font-size: 1.3em;
+    }
+}
+
+@media only screen and (max-width:634px) {
+    footer .foot {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .row3 {
+        padding: 5px;
+    }
+}
+
+@media only screen and (max-width:1480px) {
+    .row3 .box_comment {
+        padding: 20px 0px;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .row3 {
+        padding: 0px;
+    }
+}

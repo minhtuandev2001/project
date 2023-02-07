@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>thực hành event keyboard</h1>
+    <input type="text" size="50"  onkeydown="myFunction();">
+    <p id="demo">caps locl dang trong tinh trang</p>
+    <p id="demo2"></p>
+    <!--  -->
+    <p>phim Shift đang trong tình trạng </p>
+    <input type="text" size="30" onkeydown="myFunction2();">
+    <p id="demo3"></p>
+</body>
+<script>
+    function myFunction(){
+        var x = event.getModifierState("CapsLock");
+        document.getElementById("demo2").innerHTML = " " + x;
+    }
+    function myFunction2
+    
+    (){
+        var x = event.getModifierState("Shift");
+        document.getElementById("demo3").innerHTML = " " +x;
+    }
+</script>
+
+</html>

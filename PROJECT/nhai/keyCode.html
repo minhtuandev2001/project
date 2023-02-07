@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>thực hành keyCode </h1>
+    <p>nhập dâu vao cho ô input</p>
+    <input id="text" type="text" size="1000" onkeydown="myFunction();">
+    <p>nhấn enter để text in HOA</p>
+</body>
+<script>
+    function myFunction() {
+        if (event.keyCode === 13) {
+            var element = document.getElementById("text");
+            element.value = element.value.toUpperCase();
+        }
+    }
+</script>
+
+</html>

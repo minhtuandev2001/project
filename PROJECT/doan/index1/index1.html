@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: rgb(238, 234, 234);
+    }
+
+    .header_title {
+        width: 100%;
+        max-height: 500px;
+        position: relative;
+    }
+
+    .img_header {
+        width: 100%;
+        max-height: 500px;
+        background: rgb(0, 0, 0, 0.6);
+    }
+
+    .title_header {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .text_header {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #fff;
+    }
+
+    .link_nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 1em;
+        margin-bottom: 0;
+        padding: 0;
+        background-color: #fff;
+        border-radius: 3px;
+        box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.2);
+    }
+
+    .link_nav li a {
+        text-decoration: none;
+        margin: 0;
+        padding: 20px 25px;
+        color: rgb(95, 95, 95);
+        font-size: 1.1em;
+    }
+
+    .link_nav li a:hover {
+        background-color: rgb(0, 0, 0, 0.1)
+    }
+
+    .section {
+        width: 100%;
+        height: auto;
+        background-image: url('img/khay.png');
+        background-size: cover;
+        margin-bottom: 50px;
+    }
+
+    .card_section {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:space-around;
+    }
+    .card{
+        margin: 10px 20px;
+        transition: 0.6s;
+    }
+    .card:hover{
+        transform : translateY(-20px);
+        box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.7)
+    }
+    .noi_dung {
+        width: 100%;
+        border: 1px solid black;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #fff;
+
+    }
+
+    .img_noidung {
+        width: 100%;
+        border: 1px solid black;
+    }
+
+    .text_section {
+        max-width: 550px;
+        margin-left: 50px;
+    }
+</style>
+
+<body>
+    <div class="container-fluid">
+        <header>
+            <div class="header_title">
+                <img class="img_header" src="img/trangchu.png" alt="">
+                <div class="title_header">
+                    <div class="text_header">
+                        <h1 style="margin-bottom: 0; font-size:5vw;">Food JaPan</h1>
+                        <p style="margin-top: 0; font-size:3vw;">Lorem ipsum dolor sit, amet consecuta?</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <nav>
+            <div class="container">
+                <div class="nav_section">
+                    <ul class="link_nav" type="none">
+                        <h3 style="color:rgb(252, 88, 170); font-size:1.5em; margin: 15px;">Food JaPan</h3>
+                        <li><a href="">Trang chủ</a></li>
+                        <li><a href="">Đăng ký</a></li>
+                        <li><a href="">Đăng nhập</a></li>
+                        <li><a href="">Trợ giúp</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <br>
+        <br>
+        <section>
+            <div class="container">
+                <div style="background-color: #fff;">
+                    <h3 style="font-family:Segoe UI; font-weight: 450; padding: 10px 0px;">danh muc mon an</h3>
+                </div>
+                <div class="section" style="padding: 20px;">
+                    <div class="card_section">
+                        <div class="card" style="max-width: 230px;">
+                            <img src="img/hb1.png" alt="" style="width: 230px; height: 210px;">
+                            <div class="card-body">
+                                <h5>Hiểu biết</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                            </div>
+                        </div>
+                        <div class="card" style="max-width: 230px;">
+                            <img src="img/hb2.png" alt="" style="width: 230px; height: 210px;">
+                            <div class="card-body">
+                                <h5>Hiểu biết</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                            </div>
+                        </div>
+                        <div class="card" style="max-width: 230px;">
+                            <img src="img/hb4.png" alt="" style="width: 230px; height: 210px;">
+                            <div class="card-body">
+                                <h5>Hiểu biết</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+        
+    </div>
+</body>
+
+</html>
