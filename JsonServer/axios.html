@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h2>Danh sach khoa hoc</h2>
+        <!-- <ul id="list-course"></ul> -->
+    </div>
+    <div>
+        <button onclick="getAllData()">get all data</button>
+    </div>
+    <br>
+    <div>
+        <button onclick="getUserId()">search use equal id</button>
+        <input type="text" name="id">
+    </div>
+    <br>
+    <div style="width: 310px;">
+        <h2 style="text-align: center;">Add Course</h2>
+        <div style="display: flex; justify-content: space-between">
+            <label for="">name</label>
+            <input type="text" name="name" placeholder="enter name">
+        </div>
+        <br>
+        <div style="display: flex; justify-content: space-between">
+            <label for="">description</label>
+            <input type="text" name="description" placeholder="description">
+            <input type="text" name="idUpdate" hidden>
+        </div>
+        <br>
+        <div>
+            <button onclick="handleCreateCourse()">create</button>
+            <button onclick="handleUpdateCourse()">update</button>
+        </div>
+    </div>
+    <div>
+        <div style="background-color: rgb(226, 227, 229); width: 600px ">
+            <ul id="list-item-couse"></ul>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+<script src="./axiosApi.js"></script>
+
+</html>
