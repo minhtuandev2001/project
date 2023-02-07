@@ -1,0 +1,75 @@
+.section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+  position: relative;
+  justify-content: center;
+}
+.colSection {
+  padding: 20px 20px 0px 20px;
+  margin-left: 100px;
+  display: flex;
+  justify-content: center;
+  /* width: 95%; */
+}
+.filterData {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.filterData p {
+  font-weight: 461;
+  font-size: 20px;
+  line-height: 29px;
+  color: #1eb2a6;
+  margin-right: 10px;
+}
+
+.boxTitle {
+  font-weight: 461;
+  font-size: 24px;
+  line-height: 29px;
+  color: #1eb2a6;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-top: 30px;
+  clear: both;
+}
+/* card */
+.boxCard {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* slider */
+.slider {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  width: calc(100vw - 165px);
+}
+
+/* pagination */
+.pagination {
+    float: right;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .pagination span {
+    color: black;
+    float: left;
+    padding: 5px 14px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  /* thiết lập style cho class active */
+  .pagination span.active {
+    background-color: #ffa34d;
+    color: white;
+  }
+  /* thêm màu nền khi người dùng hover vào class không active */
+  .pagination span:hover:not(.active) {
+    background-color: #ddd;
+  }
