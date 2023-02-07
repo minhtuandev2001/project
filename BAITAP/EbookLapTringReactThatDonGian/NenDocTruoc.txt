@@ -1,0 +1,11 @@
+﻿Cám ơn bạn đã ủng hộ VNTALKING (^_^)
+Trong quá trình đọc sách, nếu có vấn đề phát sinh, xin vui lòng phản hồi tới VNTALKING theo các hình thức dưới đây:
+
+Website: https://vntalking.com
+Fanpage: https://facebook.com/vntalking
+Group: https://www.facebook.com/groups/hoidaplaptrinh.vntalking
+Email: support@vntalking.com
+Github: https://github.com/vntalking/ebook-reactjs-that-don-gian
+================================================================================
+Ngoài ra, bạn có thể tham khảo cuốn sách nữa của VNTALKING tại đây:
+1. Lập trình Node.JS thật đơn giản: https://vntalking.com/sach-hoc-lap-trinh-node-js-that-don-gian-html
