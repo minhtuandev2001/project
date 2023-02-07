@@ -1,0 +1,4 @@
+  import ImageList from "./components/resizeMode.js"; // bai2
+  return (
+       <ImageList style={styles.image}></ImageList>
+      );

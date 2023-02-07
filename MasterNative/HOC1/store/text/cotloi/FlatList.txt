@@ -1,0 +1,63 @@
+return (
+    <SafeAreaView style={styles.container}>
+      <Text>chao</Text>
+      <FlatList
+        data={[
+          { name: "Android" },
+          { name: "iOS" },
+          { name: "Java" },
+          { name: "Swift" },
+          { name: "Php" },
+          { name: "Hadoop" },
+          { name: "Sap" },
+          { name: "Python" },
+          { name: "Ajax" },
+          { name: "C++" },
+          { name: "Ruby" },
+          { name: "Rails" },
+          { name: ".Net" },
+          { name: "Perl" },
+          { name: "Sap" },
+          { name: "Python" },
+          { name: "Ajax" },
+          { name: "C++" },
+          { name: "Ruby" },
+          { name: "Rails" },
+          { name: ".Net" },
+          { name: "Perl" },
+        ]}
+        renderItem={({ item }, index) => (
+          <Text
+            onPress={() => {
+              Alert.alert(item.name);
+            }}
+            style={styles.textItem}
+            key={index}
+          >
+            {item.name}
+          </Text>
+        )}
+      />
+    </SafeAreaView>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "cyan",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  textItem: {
+    backgroundColor: "#fff",
+    borderBottomWidth: 1,
+    // borderBottomColor: "black",
+    width: 365,
+    fontSize: 20,
+    textAlign: "center",
+    marginTop: 5,
+    paddingTop: 2,
+    paddingBottom: 2,
+  },
+});

@@ -1,0 +1,32 @@
+ const arrCategoryList = [
+    { id: 1, name: "doraemon" },
+    { id: 2, name: "nobita" },
+    { id: 3, name: "cahien" },
+    { id: 4, name: "xeco" },
+    { id: 5, name: "xuka" },
+  ];
+  return (
+    <View>
+      <ScrollView
+        style={{ paddingRight: 16, paddingLeft: 16 }}
+        contentContainerStyle={{ backgroundColor: "#f00" }}>
+        {arrCategoryList.map((item) => 
+        (<CategoryListItem key={item.id} item={item}/>))}
+      </ScrollView>
+      {/* <FileList data={arrCategoryList}
+        renderItem={({item}) => <CategoryListItem key={item.id} item={item}/>}
+      
+      /> */}
+    </View>
+  );
+
+  const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: "stretch",
+    backgroundColor: "#fff",
+    paddingRight: 16,
+    paddingLeft: 16,
+    justifyContent: "center",
+  },
+});
